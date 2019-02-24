@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Loading</title>
+    </head>
+    <body>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            .loading {
+                max-width: 50%;
+                color: rgb(209, 42, 42);
+                line-height: 1.4;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-align: center;
+                -webkit-font-smoothing: antialiased;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .loading__subtext {
+                color: rgb(150, 150, 150);
+                font-size: .8rem;
+                font-weight: normal;
+            }
+        </style>
+        <section class="loading">
+            Connection Failed.
+            Make sure you're connected to the robot via USB and try running the tool again. Check in the driver station to ensure that there is robot communication at IP 172.22.11.2
+            <br>
+            <span class="loading__subtext">- Ethernet/Wireless loading to come soon.</span>
+        </section>
+    </body>
+</html>

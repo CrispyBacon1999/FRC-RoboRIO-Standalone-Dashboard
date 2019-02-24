@@ -1,0 +1,22 @@
+{
+  "name": "roborio-webdash",
+  "version": "1.0.0",
+  "description": "Standalone chromium installation to run the RoboRIO Web dashboard when the computer being used doesn't have a HTML5 compatible browser.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . \"RoboRIO Dashboard Standalone\" --platform=win32 --arch=x64 --overwrite",
+    "deploy": "node lib/deploy.js"
+  },
+  "author": "Josh Bacon",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.5",
+    "electron-packager": "^13.1.0",
+    "electron-winstaller": "^2.7.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "ping": "^0.2.2"
+  }
+}
